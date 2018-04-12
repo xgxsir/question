@@ -1,0 +1,113 @@
+一、(1)git是什么：Git 是 Linux 发明者 Linus 开发的一款新时代的版本控制系统，Git和SVN是类似的，都是一种版本控制工具，是一个免费的开源 分布式版本控制系统，旨在处理速度和效率从小到大的项目。Git拥有”本地仓库“，即使不联网，也能在本地做版本管理。
+(2)起源：为什么叫git可能是linus的自嘲吧。2005年，当时linux在使用一个叫做BitKeeper的版本控制工具，BitKeeper开发商在这一年决定不再免费提供给linux社区使用，Linus花了两周时间自己用C写了一个分布式版本控制系统，这就是Git！一个月之内，Linux系统的源码已经由Git管理了！Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等。（如果不是当年BitMover公司威胁Linux社区，可能现在我们就没有免费而超级好用的Git了。）
+(3)做什么的：Git 做的就是把保存，加备，加备注，合并代码等等一系列的事情，自动帮你完成。GIT其实就是代码版本控制器，是管理代码的一种方式,再简单来说，Git 能帮你：
+方便地检索之前所做的文件修改。
+方便地和多人共同在一个项目上合作。
+能代码还原，还制定到某某个地方。
+
+
+二、(1)类似的：1.SVN 2.Mercurial(HG) 3.CVS 4.Apache Subversion 5.TRAC 6.BitKeeper 7.Darcs 8.Bazaar  9.Fossil 10.Perforce 11.monotone 12.Veracity 13.Plastic SCM等等
+(2)各有什么优缺点（以SVN为例）：
+SVN的优点：
+1、SVN对中文支持好
+2、操作简单，使用没有难度，美工人员，产品人员，测试人员，实施人员都可轻松上手。
+3、功能完善，操作方便。
+4、采用集中式，易于管理，集中式服务器更能保证安全性；
+5、管理方便，逻辑明确，理念符合常规思维；
+6、代码的一致性高；
+7、适合人数不多的项目开发；
+8、允许一个文件有任意多的可命名属性，会关注所有的文件类型；
+9、支持二进制文件，更容易处理大文件；
+10、支持空目录。
+SVN的缺点：
+1、由于代码库不是分布式，而是集中在一个地方的，所以导致跨国访问的时候速度很慢。
+2、服务器压力太大，数据库容量暴增；
+3、由于代码库只有一份，特别是元数据都存在服务器上，所以当服务器崩溃的时候损失严重
+4、必须连接在服务器上，否则基本不能工作、提交、对比、还原等；
+5、不适合开源开发。
+Git的优点：
+1、对程序源代码进行差异化的版本管理，代码库占极少的空间。
+2、适合分布式开发，强调个体；
+3、公共的服务器压力和数量都不会太大；
+4、速度快， 成熟的架构，开发灵活；
+5、任意两个开发者之间可以很容易的解决冲突；
+6、离线工作，管理代码成本低，不需要依赖服务器；
+7、部署方便。基本上下个命令就可以用；
+8、易于代码的分支化管理,良好的分支机制，可以让主干代码保持干净。
+Git的缺点：
+1.不支持中文，图形界面支持差，使用难度大。
+2、不易推广。?
+3、资料少，学习成本比较大，学习周期比较长，要求人员素质比较高；
+4、不符合常规思维；
+5、代码保密性差，一旦开发者把整个库克隆下来就可以完全公开所有代码和版本信息。
+(3)为啥GiT好：git更适合做开源的东西，更方便分享
+Git作为分布式版本控制的代表，其优点不言而喻
+1.快
+2.本地仓库、本地的版本管理
+3.不污染子目录的track文件
+4.强大的branch
+5.轻量级分支
+6.merge工具的强力
+7.分布式
+8.神奇的git gc
+9.各种工作流
+10.清爽实用的cli
+11.github
+
+
+三、github和Git的关系：
+git是一个版本控制工具
+github是一个用git做版本控制的项目托管平台，一个网站，提供给用户空间创建git仓储，保存用户的一些数据文档或者代码等 
+github是基于git的，可以说是git的衍生品
+
+
+四、git常见命令：
+Git 所有的操作命令开头都要以 git 开头
+git clone
+git init
+git status
+git add
+git log
+git revert
+git reset
+git commit 
+git remote
+git rm
+git fetch
+git pull
+git push
+git diff
+git mv
+git clean
+git stash
+git branch
+git checkout
+git merge
+git tag
+git rebase
+git reflog
+
+
+五、svn常见命令：
+svn checkout
+svn add
+svn ci
+svn delete
+svn lock
+svn update
+svn info
+svn log
+svn status
+svn diff
+vn merge 
+svn help
+svn revert
+svn list
+svn mkdir 
+svn info
+svn lock/unlock
+svn sw
+svn resolved
+svn cat
+svn up
+
